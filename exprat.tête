@@ -25,7 +25,7 @@
 #define RAT_MAUVAISR REG_BADR
 #define RAT_EINTERVALLE REG_ERANGE
 #define RAT_EESPACE REG_ESPACE
-#define REG_MAUVAISRPT RAT_BADRPT /* ??? */
+#define RAT_MAUVAISRPT REG_BADRPT /* ??? */
 #define RAT_EPASDESYS REG_ENOSYS /* ??? */
 
 #define ratcomp regcomp
