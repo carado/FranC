@@ -4,6 +4,10 @@
 #define mesubn scalbn
 #define mesubln scalbln
 
+#define puis pow
+#define rccr sqrt
+#define rccb cbrt
+
 #define fer erf
 #define ferc erfc
 
