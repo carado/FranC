@@ -1,0 +1,34 @@
+#include <regex.h>
+
+#define exprat_t regex_t
+#define ra_nsous re_nsub
+#define ratdec_t regoff_t
+#define ratcorrespond_t regmatch_t
+#define rc_dd rm_so
+#define rc_fd rm_eo
+
+#define RAT_ÉTENDU REG_EXTENDED
+#define RAT_ICAS REG_ICASE
+#define RAT_PASDESOUS REG_NOSUB
+#define RAT_NOUVELLELIGNE REG_NEWLINE
+#define RAT_PASDEDDL REG_NOTBOL
+#define RAT_PASDEFDL REG_NOTEOL
+#define RAT_PASDECORRESPONDANCE REG_NOMATCH
+#define RAT_MAUVAISMOT REG_BADPAT
+#define RAT_ECOLLAGE REG_ECOLLATE
+#define RAT_ECTYPE REG_ECTYPE
+#define RAT_EECHAPPE REG_EESCAPE
+#define RAT_ESOUSRAT REG_ESUBREG
+#define RAT_ECROCH REG_EBRACK
+#define RAT_EPAREN REG_EPAREN
+#define RAT_EACCOLADE REG_EBRACE
+#define RAT_MAUVAISR REG_BADR
+#define RAT_EINTERVALLE REG_ERANGE
+#define RAT_EESPACE REG_ESPACE
+#define RAT_BADRPT REG_MAUVAISRPT /* ??? */
+#define RAT_EPASDESYS REG_ENOSYS /* ??? */
+
+#define ratcomp regcomp
+#define raterreur regerror
+#define ratexéc regexec
+#define ratlibère regfree
