@@ -1,0 +1,146 @@
+#include "base.tête"
+#include <unistd.h>
+
+#define _VERSION_DE_POSIX _POSIX_VERSION
+#define _VERSION_DE_PSOIX2 _POSIX2_VERSION
+
+#define _VERSION_DE_XOPEN _XOPEN_VERSION
+
+#define _INFO_CONSULTATIVE_POSIX _POSIX_ADVISORY_INFO
+#define _ES_ASYNCHRONE_POSIX _POSIX_ASYNCHRONOUS_IO
+#define _BARRIÈRES_POSIX _POSIX_BARRIERS
+#define _POSIX_CHOWN_RESTREINT _POSIX_CHOWN_RESTRICTED
+#define _SÉLÉCTION_DHORLOGE_POSIX _POSIX_CLOCK_SELECTION
+#define _TEMPSCPU_POSIX _POSIX_CPUTIME
+#define _FSYNC_POSIX _POSIX_FSYNC
+#define _PIV6_POSIX _POSIX_IPV6
+#define _CONTRÔLE_DE_BOULOT_POSIX _POSIX_JOB_CONTROL
+#define _FICHIERS_CARTOGRAPHIÉS_POSIX _POSIX_MAPPED_FILES
+#define _VERROUMÉM_POSIX _POSIX_MEMLOCK
+#define _PLAGE_VERROUMÉM_POSIX _POSIX_MEMLOCK_RANGE
+#define _PROTECTION_MÉMOIRE_POSIX _POSIX_MEMORY_PROTECTION
+#define _PASSAGE_DE_MESSAGE_POSIX _POSIX_MESSAGE_PASSING
+#define _HORLOGE_MONOTONIQUE_POSIX _POSIX_MONOTONIC_CLOCK
+#define _PAS_DE_TRONC_POSIX _POSIX_NO_TRUNC
+#define _ES_PRIORISÉES_POSIX _POSIX_PRIORITIZED_IO
+#define _ORDONNANCEMENT_DES_PRIORITÉS_POSIX _POSIX_PRIORITY_SCHEDULING
+#define _CHAUSETTES_CRUES_POSIX _POSIX_RAW_SOCKETS
+#define _VERROUS_LECTEURS_ÉCRIVEURS_POSIX _POSIX_READER_WRITER_LOCK
+#define _SIGNAUX_EN_TEMPS_RÉEL_POSIX _POSIX_REALTIME_SIGNALS
+#define _EXPREG_POSIX _POSIX_REGEXP
+#define _IDS_SAUVEGARDÉS_POSIX _POSIX_SAVED_IDS
+#define _SÉMAPHORES_POSIX _POSIX_SEMAPHORES
+#define _OBJETS_MÉMOIRE_PARTAGÉS_POSIX _POSIX_SHARED_MEMORY_OBJECTS
+#define _COQUILLE_POSIX _POSIX_SHELL
+#define _APPARITION_POSIX _POSIX_SPAWN
+#define _VERROUS_TOURNANTS_POSIX _POSIX_SPIN_LOCKS
+#define _SERVEUR_SPORADIQUE_POSIX _POSIX_SPORADIC_SERVER
+#define _ES_SYNCHRONISÉES_POSIX _POSIX_SYNCHRONIZED_IO
+#define _ATTRIBUT_DE_FICELLE_ADDRPILE_POSIX _POSIX_THREAD_ATTR_STACKADDR
+#define _ATTRIBUT_DE_FICELLE_TAILLEPILE_POSIX _POSIX_THREAD_ATTR_STACKSIZE
+#define _TEMPSCPU_DE_FICELLE_POSIX _POSIX_THREAD_CPUTIME
+#define _HÉRITAGE_DE_PRIO_FICELLE_POSIX _POSIX_THREAD_PRIO_INHERIT
+#define _PROTECTION_DE_PRIO_FICELLE_POSIX _POSIX_THREAD_PRIO_PROTECT
+#define _ORDONNANCEMENT_DES_PRIORITÉS_FICELLE_POSIX _POSIX_THREAD_PRIORITY_SCHEDULING
+#define _PROCESSUS_PARTAGÉS_FICELLE_POSIX _POSIX_THREAD_PROCESS_SHARED
+#define _FONCTIONS_FICELLESÛRES_POSIX _POSIX_THREAD_SAFE_FONCTIONS
+#define _SERVEUR_SPORADIQUE_DE_FICELLE_POSIX _POSIX_THREAD_SPORADIC_SERVER
+#define _FICELLES_POSIX _POSIX_THREADS
+#define _DÉLAIS_DATTENTE_POSIX _POSIX_TIMEOUTS
+#define _CHRONOMÈTRES_POSIX _POSIX_TIMERS
+#define _PEUT_CONTENIR_DES_TRACES_DE_POSIX _POSIX_TRACE
+#define _PEUT_CONTENIR_DES_TRACES_DE_FILTRES_À_ÉVÈNEMENTS_POSIX _POSIX_TRACE_EVENT_FILTER
+#define _PEUT_CONTENIR_DES_TRACES_HÉRITÉES_POSIX _POSIX_TRACE_INHERIT
+#define _PEUT_CONTENIR_DES_TRACES_DE_BÛCHES_POSIX _POSIX_TRACE_LOG
+#define _OBJETS_MÉMOIRE_TYPÉS_POSIX _POSIX_TYPED_MEMORY_OBJECTS
+#define _VDÉSACTIVER_POSIX _POSIX_VDISABLE
+#define _ATTACHEMENT_C_POSIX2 _POSIX2_C_BIND
+#define _DÉVELOPPEMENT_C_POSIX2 _POSIX2_C_DEV
+#define _TERM_CAR_POSIX _POSIX2_CHAR_TERM
+#define _DÉVELOPPPEMENT_FORT_POSIX2 _POSIX2_FORT_DEV
+#define _LANCEMENT_FORT_POSIX2 _POSIX2_FORT_RUN
+#define _LOCALEDÉF_POSIX2 _POSIX2_LOCALDEF
+#define _SEB_POSIX2 _POSIX2_PBS
+#define _COMPTABILITÉ_SEB_POSIX2 _POSIX2_PBS_ACCOUNTING
+#define _POINT_DE_CONTRÔLE_SEB_POSIX2 _POSIX2_PBS_CHECKPOINT
+#define _LOCALISER_SEB_POSIX2 _POSIX2_PBS_LOCATE
+#define _MESSAGE_SEB_POSIX2 _POSIX2_PBS_MESSAGE
+#define _PISTE_SEB_POSIX2 _POSIX2_PBS_TRACK
+#define _DÉV_MG_POSIX2 _POSIX2_SW_DEV
+#define _UPU_POSIX2 _POSIX2_UPE
+
+#define NUL NULL
+
+#define _ES_ASYNC_POSIX _POSIX_ASYNC_IO
+#define _ES_PRIO_POSIX _POSIX_PRIO_IO
+#define _ES_SYNC_POSIX _POSIX_SYNC_IO
+
+#define L_OK R_OK
+#define E_OK W_OK
+
+#define _CHEMIN_CS _CS_PATH
+
+#define RECHERCHE_COUR SEEK_CUR
+#define RECHERCHE_FIN SEEK_END
+#define RECHERCHE_DÉF SEEK_SET
+
+#define F_VERROU F_LOCK
+#define F_VERROUT F_TLOCK
+#define F_VERROUU F_ULOCK
+
+#define NOFICHIER_ERRSTD STDERR_FILENO
+#define NOFICHIER_ENTSTD STDIN_FILENO
+#define NOFICHIER_SORSTD STDOUT_FILENO
+
+#include "sys/types.tête"
+
+#include "typesent.tête"
+
+#define accès access
+#define alarme alarm
+#define chrep chdir
+#define chpro chown
+#define fermer close
+#define confch confstr
+
+#define crypter crypt
+#define cidterm ctermid
+#define encrypter encrypt
+#define _exit _sortir
+#define chprof fchown
+#define chrepf fchdir
+#define syncdonnéesf fdatasync
+#define fourchette fork
+#define confcheminf fpathconf
+#define syncf fsync
+#define tronquerf ftruncate
+#define obtenirrtc getcwd
+#define obtenirideg getegid
+#define obtenirideu geteuid
+#define obteniridg getgid
+#define obtenirgroupes getgroups
+#define obteniridhôte gethostid
+#define obtenirnomdhôte gethostname
+#define obteniridentifiant getlogin
+#define obteniridentifiant_r getlogin_r
+#define obteniropt getopt
+#define obteniridgp getpgid
+#define obtenirgrpp getpgrp
+#define obteniridp getpid
+#define obteniridpp getppid
+#define obtenirids getsid
+#define obteniridu getuid
+#define obtenirrt getwd
+#define estuntty isatty
+#define chprol lchown
+#define lier link
+#define verrouillerf lockf
+#define chercherl lseek
+#define sympathique nice
+#define confchemin pathconf
+#define tube pipe
+#define lirep pread
+#define écrirep pwrite
+#define lire read
+#define lirelien readlink
+#define enlv
