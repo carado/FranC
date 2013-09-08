@@ -23,4 +23,6 @@
 #define vide void
 #define tantque while
 
+#define affirmer_statiquement static_assert
+
 #define principal main
