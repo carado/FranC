@@ -1,4 +1,4 @@
-#include "tête.base"
+#include "base.tête"
 #include <math.h>
 
 #define mesubn scalbn
