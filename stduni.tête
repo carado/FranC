@@ -1,6 +1,8 @@
 #include "base.tête"
 #include <unistd.h>
 
+// TODO: il manque une tonne de trucs ici, mais c’est un travail énorme.
+
 #define _VERSION_DE_POSIX _POSIX_VERSION
 #define _VERSION_DE_PSOIX2 _POSIX2_VERSION
 
