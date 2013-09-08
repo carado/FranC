@@ -1,0 +1,87 @@
+#include "base.tête"
+#include <sys/socket.h>
+
+#define t_lonchau socklen_t
+#define t_famille_ac sa_family_t
+
+#define addrchau sockaddr
+#define famille_ac sa_family
+#define données_ac sa_data
+
+#define têtemsg msghdr
+#define nom_msg msg_name
+#define lonnom_msg msg_namelen
+#define ves_msg msg_iov
+#define lonves_msg msg_iovlen
+#define contrôle_msg msg_control
+#define loncontrôle_msg msg_controllen
+#define drapeaux_msg msg_flags
+
+#define têtemsgc cmsghdr
+#define lon_msgc cmsg_len
+#define niveau_msgc cmsg_level
+#define type_msgc cmsg_type
+
+#define DROITS_SCM SCM_RIGHTS //??
+
+#define DONNÉES_MSGC CMSG_DATA
+#define PRCHNTÊTE_MSGC CMSG_NXTHDR
+#define PREMIÈRETÊTE_MSGC CMSG_FIRSTHDR
+
+#define attard linger
+#define allumééteint_a l_onoff
+#define attard_a l_linger
+
+#define CHAU_GRAMD
+#define CHAU_FLUX
+#define CHAU_PAQUETSEQ
+
+#define CHAU_LOC //"Liste d’options de chaussons", je suppose.
+
+#define ACCEPTECONN_OC
+#define DIFFUSION_OC
+#define DÉBOGUAGE_OC
+#define NEPASROUTER_OC
+#define ERREUR_OC
+#define GARDEENVIE_OC
+#define SATTARDE_OC
+#define HDBENLIGNE_OC
+#define RÇTTAMP_OC
+#define RÇTBAFLGRN_OC
+#define RÇTDÉLAIDATTENTE_OC
+#define RÉUTILISERADDRESSE_OC
+#define ENVYRTAMP_OC
+#define ENVYRBAFLGRN_OC
+#define ENVYRDÉLAIDATTENTE_OC
+#define TYPE_OC
+
+#define TRONCC_MSG MSG_CTRUNC
+#define NEPASROUTER_MSG MSG_DONTROUTE
+#define FDE_MSG MSG_EOR
+#define COUPDŒIL_MSG MSG_PEEK
+#define TRONC_MSG MSG_TRUNC
+#define ATTENDTOUS_MSG MSG_WAITALL
+
+#define UNIX_FA
+#define NONSPÉC_FA
+#define INET_FA
+
+#define ÉTEINT_LR SHUT_RD
+#define ÉTEINT_ER SHUT_WR
+#define ÉTEINT_LRER SHUT_RDWR
+
+#define accepter accept
+#define attacher bind
+#define connecter connect
+#define obtenirnompair getpeername
+#define obtenirnomchau getsockname
+#define obteniroptchau getsockopt
+#define écouter listen
+#define recvdepuis recvfrom
+#define envoyer send
+#define envoyermsg sendmsg
+#define envoyerà sendto
+#define définiroptchau setsockopt
+#define éteindre shutdown
+#define chaussette socket
+#define paire_de_chausettes socketpair
