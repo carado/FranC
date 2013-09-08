@@ -160,4 +160,11 @@
 #define obtenirgrppt tcgetpgrp
 #define définirgrppt tcsetpgrp
 #define tronquer truncate
-#define 
+#define nomtty ttyname
+#define nomtty_r ttyname_r
+#define alarmeu ualarm
+#define délier unlink
+#define dormiru usleep
+#define fourchettev vfork
+#define écrire write
+
