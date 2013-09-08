@@ -1,0 +1,4 @@
+#include "base.tête"
+#include <errno.h>
+
+#define noerr errno

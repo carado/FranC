@@ -1,0 +1,12 @@
+#include "base.tête"
+#include <signal.h>
+
+#define lever raise
+
+#define t_sig_atomique sig_atomic_t
+
+#define SIGINTRPT SIGABRT
+#define SIGEPF SIGFPE
+#define SIGVSEG SIGSEGV
+
+#define SIG_DFT SIG_DFL

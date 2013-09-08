@@ -1,0 +1,4 @@
+#include "base.tête"
+#include <assert.h>
+
+#define affirmer assert

@@ -1,0 +1,22 @@
+#include "base.tête"
+#include <time.h>
+
+#define horloge clock
+#define difftemps difftime
+#define fbtemps mktime
+#define temps time
+
+#define tempsasc asctime
+#define tempsc ctime
+#define tempsgm gmtime
+#define tempslocal localtime
+#define tempsfchn strftime
+
+#define HORLOGES_PAR_SECONDES_OH_MON_DIEU_QUI_ENVOIE_TOUTES_CES_HORLOGES CLOCKS_PER_SEC
+#define HORLOGES_PAR_SECONDES CLOCKS_PER_SEC
+#define NUL NULL
+
+#define t_horloge clock_t
+#define t_taille size_t
+#define t_temps time_t
+//#define st tm

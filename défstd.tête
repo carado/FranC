@@ -1,0 +1,11 @@
+#include "base.tête"
+#include <stddef.h>
+
+#define t_diffptr ptrdiff_t
+#define t_taille size_t
+#define t_alignement_max max_align_t
+#define t_ptrnul nullptr_t
+
+#define décalagede offsetof
+
+#define NUL NULL

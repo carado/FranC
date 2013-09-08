@@ -1,0 +1,16 @@
+#include "base.tête"
+#include <wchar.h>
+
+#define obtenirfcl fgetwc
+#define obtenirfchl fgetws
+#define mettrefcl fputwc
+#define mettrefchl fputws
+#define largef fwide
+#define imprimerlff fwprintf
+#define scannerlff fwscanf
+#define obtenircl getwc
+#define obtenircarl getwchar
+#define mettrecl putwc
+#define mettrecarl putwchar
+#define imprimerfchl
+#define imprimer

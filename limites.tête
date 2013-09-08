@@ -1,0 +1,20 @@
+#include "base.tête"
+#include <limits.h>
+
+#define CAR_BOUT CHAR_BIT
+#define CARS_MIN SCHAR_MIN
+#define CARS_MAX SCHAR_MAX
+#define CARN_MAX UCHAR_MAX
+#define CAR_MIN CHAR_MIN
+#define CAR_MAX CHAR_MAX
+#define MO_LON_MAX MB_LEN_MAX
+#define COURT_MIN SHRT_MIN
+#define COURT_MAX SHRT_MAX
+#define COURTN_MAX USHRT_MAX
+#define ENT_MIN INT_MIN
+#define ENT_MAX INT_MAX
+#define ENTN_MAX UINT_MAX
+#define LONGN_MAX ULONG_MAX
+#define LONGL_MIN LLONG_MIN
+#define LONGL_MAX LLONG_MAX
+#define LONGLN_MAX ULLONG_MAX

@@ -1,0 +1,4 @@
+#include "base.tête"
+#include <stdbool.h>
+
+#define __bool_vrai_faux_sont_définis __bool_true_false_are_defined

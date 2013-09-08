@@ -1,0 +1,33 @@
+#include "base.tête"
+#include <string.h>
+
+#define cpiemém memcpy
+#define déplacermém memmove
+#define cpiechn strcpy
+#define cpienchn strncpy
+
+#define catchn strcat
+#define catnchn strncat
+
+#define cmpmém memcmp
+#define cmpchn strcmp
+#define assechn strcoll
+#define cmpnchn strncmp
+#define frmxchn strxfrm
+
+#define carmém memchr
+#define carchn strchr
+#define spccchn strcspn
+#define __scrogneugneu strpbrk
+#define carrchn strrchr
+#define spcchn strspn
+#define chnchn strstr
+#define jetchn strtok
+
+#define définirmém memset
+#define erreurchn strerror
+#define lonchn strlen
+
+#define NUL NULL
+
+#define t_taille size_t

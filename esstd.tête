@@ -1,0 +1,67 @@
+#include "base.tête"
+#include <stdio.h>
+
+#define enlever remove
+#define renommer rename
+#define fichiertemp tmpfile
+#define nomtemp tmpnam
+
+#define fermerf fclose
+#define rincerf fflush
+#define ouvrirf fopen
+#define réouvrirf freopen
+#define définirtamp setbuf
+#define définirvtamp setvbuf
+
+#define imprimerff fprintf
+#define scannerff fscanf
+#define imprimerf printf
+#define scannerf scanf
+#define imprimerfchn snprintf
+#define imprimerfch sprintf
+#define scannerfch sscanf
+#define vimprimerff vfprintf
+#define vscannerff vfscanf
+#define vimprimerf vprintf
+#define vscannerf vscanf
+#define vimprimerfchn vsnprintf
+#define vimprimerfch vsprintf
+#define vscannerfch vsscanf
+
+#define obtenirfc fgetc
+#define obtenirfch fgets
+#define mettrefc fputc
+#define mettrefch fputs
+#define obtenirc getc
+#define obtenircar getchar
+#define obtenirch gets
+#define mettrec putc
+#define mettrecar putchar
+#define mettrech puts
+#define déobtenirc ungetc
+
+#define liref fread
+#define écriref fwrite
+
+#define obtenirposf fgetpos
+#define chercherf fseek
+#define définirposf fsetpos
+#define révelerf ftell
+#define rembobiner rewind
+
+#define nettoyererr clearerr
+#define fdff feof
+#define erreurf ferror
+#define ierreur perror
+
+#define TAILTAMP BUFSIZ
+#define FDF EOF
+#define NOMDEFICHIER_MAX FILENAME_MAX
+#define OUVRIRF_MAX FOPEN_MAX
+#define L_nomtemp L_tmpnam
+#define NUL NULL
+
+#define FICHIER FILE
+#define t_taille size_t
+#define t_posf fpos_t
+

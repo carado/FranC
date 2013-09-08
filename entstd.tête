@@ -1,0 +1,106 @@
+#include "base.tête"
+#include <stdint.h>
+
+#define t_entmax intmax_t
+#define t_ent8 int8_t
+#define t_ent16 int16_t
+#define t_ent32 int32_t
+#define t_ent64 int64_t
+#define t_ent_moins8 int_least8_t
+#define t_ent_moins16 int_least16_t
+#define t_ent_moins32 int_least32_t
+#define t_ent_moins64 int_least64_t
+#define t_ent_vite8 int_fast8_t
+#define t_ent_vite16 int_fast16_t
+#define t_ent_vite32 int_fast32_t
+#define t_ent_vite64 int_fast64_t
+#define t_ptrent
+#define t_entnmax uintmax_t
+#define t_entn8 uint8_t
+#define t_entn16 uint16_t
+#define t_entn32 uint32_t
+#define t_entn64 uint64_t
+#define t_entn_moins8 uint_least8_t
+#define t_entn_moins16 uint_least16_t
+#define t_entn_moins32 uint_least32_t
+#define t_entn_moins64 uint_least64_t
+#define t_entn_vite8 uint_fast8_t
+#define t_entn_vite16 uint_fast16_t
+#define t_entn_vite32 uint_fast32_t
+#define t_entn_vite64 uint_fast64_t
+#define t_ptrentn
+
+#define ENTMAX_MIN INTMAX_MIN
+#define ENTMAX_MAX INTMAX_MAX
+#define ENTNMAX_MAX UINTMAX_MAX
+
+#define ENT8_MIN INT8_MIN
+#define ENT16_MIN INT16_MIN
+#define ENT32_MIN INT32_MIN
+#define ENT64_MIN INT64_MIN
+
+#define ENT8_MAX INT8_MAX
+#define ENT16_MAX INT16_MAX
+#define ENT32_MAX INT32_MAX
+#define ENT64_MAX INT64_MAX
+
+#define ENTN8_MAX UINT8_MAX
+#define ENTN16_MAX UINT16_MAX
+#define ENTN32_MAX UINT32_MAX
+#define ENTN64_MAX UINT64_MAX
+
+#define ENT_MOINS8_MIN INT_LEAST8_MIN
+#define ENT_MOINS16_MIN INT_LEAST16_MIN
+#define ENT_MOINS32_MIN INT_LEAST32_MIN
+#define ENT_MOINS64_MIN INT_LEAST64_MIN
+
+#define ENT_MOINS8_MAX INT_LEAST8_MAX
+#define ENT_MOINS16_MAX INT_LEAST16_MAX
+#define ENT_MOINS32_MAX INT_LEAST32_MAX
+#define ENT_MOINS64_MAX INT_LEAST64_MAX
+
+#define ENTN_MOINS8_MAX UINT_LEAST8_MAX
+#define ENTN_MOINS16_MAX UINT_LEAST16_MAX
+#define ENTN_MOINS32_MAX UINT_LEAST32_MAX
+#define ENTN_MOINS64_MAX UINT_LEAST64_MAX
+
+#define ENT_VITE8_MIN INT_FAST8_MIN
+#define ENT_VITE16_MIN INT_FAST16_MIN
+#define ENT_VITE32_MIN INT_FAST32_MIN
+#define ENT_VITE64_MIN INT_FAST64_MIN
+
+#define ENT_VITE8_MAX INT_FAST8_MAX
+#define ENT_VITE16_MAX INT_FAST16_MAX
+#define ENT_VITE32_MAX INT_FAST32_MAX
+#define ENT_VITE64_MAX INT_FAST64_MAX
+
+#define ENTN_VITE8_MAX UINT_FAST8_MAX
+#define ENTN_VITE16_MAX UINT_FAST16_MAX
+#define ENTN_VITE32_MAX UINT_FAST32_MAX
+#define ENTN_VITE64_MAX UINT_FAST64_MAX
+
+#define PTRENT_MIN INTPTR_MIN
+#define PTRENT_MAX INTPTR_MAX
+#define PTRENTN_MAX UINTPTR_MAX
+
+#define TAILLE_MAX SIZE_MAX
+#define DIFFPTR_MIN PTRDIFF_MIN
+#define DIFFPTR_MAX PTRDIFF_MAX
+
+#define SIG_ATOMIQUE_MIN SIG_ATOMIC_MIN
+#define SIG_ATOMIQUE_MAX SIG_ATOMIC_MAX
+#define CARL_MIN WCHAR_MIN
+#define CARL_MAX WCHAR_MAX
+#define ENTL_MIN WINT_MIN
+#define ENTL_MAX WINT_MAX
+
+#define ENTMAX_C INTMAX_C
+#define ENTNMAX_C UINTMAX_C
+#define ENT8_C INT8_C
+#define ENT16_C INT16_C
+#define ENT32_C INT32_C
+#define ENT64_C INT64_C
+#define ENTN8_C UINT8_C
+#define ENTN16_C UINT16_C
+#define ENTN32_C UINT32_C
+#define ENTN64_C UINT64_C

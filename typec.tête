@@ -1,0 +1,18 @@
+#include "base.tête"
+#include <ctype.h>
+
+#define estalnum isalnum
+#define estalpha isalpha
+#define estvide isblank
+#define estcntrl iscntrl
+#define estchiffre isdigit
+#define estgraph isgraph
+#define estminusc islower
+#define estimprime isprint
+#define estponct ispunct
+#define estespace isspace
+#define estmajusc isupper
+#define estxchiffre isxdigit
+
+#define enminusc tolower
+#define enmajusc toupper

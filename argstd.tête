@@ -1,0 +1,9 @@
+#include "base.tête"
+#include <stdarg.h>
+
+#define av_liste va_list
+
+#define av_début va_start
+#define av_arg va_arg
+#define av_fin va_fin
+#define av_copier va_copy

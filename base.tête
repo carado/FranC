@@ -1,0 +1,26 @@
+#define casser break
+#define cas case
+#define car char
+#define continuer continue
+#define défaut default
+#define faire do
+#define sinon else
+#define externe extern
+#define flot float
+#define pour for
+#define allerà goto
+#define si if
+#define ent int
+#define registre register
+#define retourner return
+#define court short
+#define signé signed
+#define tailledo sizeof
+#define statique static
+#define changement switch
+#define déftype typedef
+#define nonsigné unsigned
+#define vide void
+#define tantque while
+
+#define principal main

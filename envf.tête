@@ -1,0 +1,34 @@
+#include "base.tête"
+#include <fenv.h>
+
+#define efnettoyerexcept feclearexcept
+#define efleverexcept feraiseexcept
+#define efobtenirdrapeauexcept fegetexceptflag
+#define efdéfinirdrapeauexcept fesetexceptflag
+
+#define efobtenirarrondissement fegetround
+#define efdéfinirarroudissement fesetround
+
+#define efobtenirenv fegetenv
+#define efdéfinirenv fesetenv
+#define eftenirexcept feholdexcept
+#define efmettreàjourenv feupdateenv
+
+#define t_envf
+#define t_exceptf
+
+#define EF_DIVPARZÉRO FE_DIVBYZERO
+#define EF_INEXACTE FE_INEXACT
+#define EF_INVALIDE FE_INVALID
+#define EF_DÉBORDEMENT FE_OVERFLOW
+#define EF_SOUSBORDEMENT FE_UNDERFLOW
+#define EF_TOUTES_EXCEPT FE_ALL_EXCEPT
+
+#define EF_VERSLEBAS FE_DOWNWARD
+#define EF_VERSLEPLUSPROCHE FE_TONEAREST
+#define EF_VERSZÉRO FE_TOWARDZERO
+#define EF_VERSLEHAUT FE_UPWARD
+
+#define EF_ENV_DFT FE_DFL_ENV
+
+#define ENVF_ACCÈS FENV_ACCESS

@@ -1,0 +1,50 @@
+#include "base.tête"
+#include <stdlib.h>
+
+#define aenf atof
+#define aeni atoi
+#define aenl atol
+#define aenll atoll
+#define chnend strtod
+#define chnenf strtof
+#define chnenl strtol
+#define chnenld strtold
+#define chnenll strtoll
+#define chnenln strtoul
+#define chnenlln strtoull
+
+#define aléa rand
+#define galéa srand
+
+#define callou calloc
+#define libérer free
+#define mallou malloc
+#define réallou realloc
+
+//#define avorter abort
+#define interrompre abort
+#define àlasortie atexit
+#define àla_sortie_rapide at_quick_exit
+#define sortir exit
+#define obtenirenv getenv
+#define sortir_rapidement quick_exit
+#define système system
+#define _Sortir _Exit
+
+#define rechercheb bsearch
+#define qtrier qsort
+
+#define molon mblen
+#define moencl mbtowc
+#define clenmo wctomb
+
+#define chmoenchcl mbstowcs
+#define chclenchmo wcstombs
+
+#define SORTIE_ÉCHEC EXIT_FAILURE
+#define SORTIE_SUCCÈS EXIT_SUCCESS
+#define MO_CUR_MAX MB_CUR_MAX
+#define NUL NULL
+#define ALÉA_MAX RAND_MAX
+
+#define t_taille size_t

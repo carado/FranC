@@ -1,0 +1,13 @@
+#include "base.tête"
+#include <iso646.h>
+
+#define et and
+#define et_eg and_eq
+#define etbout bitand
+#define oubout bitor
+#define pas not
+#define pas_eg not_eq
+#define ou or
+#define ou_eg or_eq
+#define oux xor
+#define oux_eg xor_eq

@@ -1,0 +1,6 @@
+#include "base.tête"
+#include <locale.h>
+
+#define convl lconv
+#define définirlocale setlocale
+#define convlocale localeconv

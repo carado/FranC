@@ -1,0 +1,63 @@
+#include "tête.base"
+#include <math.h>
+
+#define mesubn scalbn
+#define mesubln scalbln
+
+#define fer erf
+#define ferc erfc
+
+#define plafond ceil
+#define sol floor
+#define tronq trunc
+#define arrondir round
+#define arrondirl lround
+#define arrondirll llround
+#define aent rint
+#define alent lrint
+#define allent llrint
+#define procheent nearbyint
+#define reste remainder
+#define resquo remquo
+
+#define copiersigne copysign
+#define PUN NAN
+#define prochainaprès nextafter
+#define prochainvers nexttoward
+
+#define fam fma
+
+#define classifierfp fpclassify
+#define estfini isfinite
+#define estinf isinf
+#define estpun isnan
+#define estnormal isnormal
+#define boutsigne signbit
+
+#define estplusgrand isgreater
+#define estplusgrandegal isgreaterequal
+#define estpluspetit isless
+#define estpluspetitegal islessequal
+#define estpluspetitouplusgrand islessgreater
+#define estnonordonné isunordered
+
+#define math_gestionerr math_errhandling
+#define INFINI INFINITY
+#define PUN NAN
+#define ÉNORME_VAL HUGE_VAL
+#define ÉNORME_VALF HUGE_VALF
+#define ÉNORME_VALL HUGE_VALL
+
+#define MATH_NOERR MATH_ERRNO
+#define MATH_EXCEPTERR MATH_EXCEPTERR
+
+#define FP_INFINI FP_INFINITE
+#define FP_PUN FP_NAN
+#define FP_SOUSNORMAL FP_SUBNORMAL
+#define FP_ZÉRO FP_ZERO
+
+#define FP_LOGEB0 FP_ILOGB0
+#define FP_LOGEBPUN FP_ILOGBNAN
+
+#define t_double double_t
+#define t_flot float_t

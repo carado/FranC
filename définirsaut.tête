@@ -1,0 +1,8 @@
+#include "base.tête"
+#include <setjmp.h>
+
+#define longsaut longjmp
+
+#define définirsaut setjmp
+
+#define saut_tamp jmp_buf
