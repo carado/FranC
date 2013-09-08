@@ -15,7 +15,7 @@
 #define retourner return
 #define court short
 #define signé signed
-#define tailledo sizeof
+#define taillede sizeof
 #define statique static
 #define changement switch
 #define déftype typedef
