@@ -1,0 +1,8 @@
+#include "base.tête"
+#include <sys/types.h>
+
+#define t_cntblk blkcnt_t
+#define t_tailleblk blksize_t
+#define t_horloge clock_t
+#define t_idhorloge clockid_t
+#define 
