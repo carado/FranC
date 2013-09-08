@@ -143,4 +143,21 @@
 #define écrirep pwrite
 #define lire read
 #define lirelien readlink
-#define enlv
+#define enlvrep rmdir
+#define définirideg setegid
+#define définirideu seteuid
+#define définiridg setgid
+#define définiridgp setpgid
+#define définirgrpp setpgrp
+#define définiridreg setregid
+#define définiridreu setreuid
+#define définirids setsid
+#define définiridu setuid
+#define dormir sleep
+#define échangeb swab
+#define liensym symlink
+#define confsys sysconf
+#define obtenirgrppt tcgetpgrp
+#define définirgrppt tcsetpgrp
+#define tronquer truncate
+#define 
