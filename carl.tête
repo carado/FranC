@@ -34,12 +34,11 @@
 
 #define oencl btowc
 #define lonmo mbrlen
-#define moencl mbrtowc
+#define morencl mbrtowc
 #define initémo mbsinit
 #define chmoenchl mbsrtowcs
 #define chlenchmo wcrtomb
 #define cleno wctob
-#define chlenchmo
 
 #define catchl wcscat
 #define chrchl wcschr
