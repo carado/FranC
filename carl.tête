@@ -6,11 +6,69 @@
 #define mettrefcl fputwc
 #define mettrefchl fputws
 #define largef fwide
-#define imprimerlff fwprintf
-#define scannerlff fwscanf
+#define imprimerflf fwprintf
+#define scannerflf fwscanf
 #define obtenircl getwc
 #define obtenircarl getwchar
 #define mettrecl putwc
 #define mettrecarl putwchar
-#define imprimerfchl
-#define imprimer
+#define imprimerflch swprintf
+#define scannerflch swscanf
+#define déobtenircl ungetwc
+#define vimprimerflf vfwprintf
+#define vscannerflf vfwscanf
+#define vimprimerflch vswprintf
+#define vscannerflch vswscanf
+#define vimprimerfl vwprintf
+#define vscannerfl vwscanf
+#define imprimerfl wprintf
+#define scannerfl wscanf
+
+#define chlend wcstod
+#define chlenf wcstof
+#define chlenl wcstol
+#define chlenld wcstold
+#define chlenll wcstoll
+#define chlenln wcstoul
+#define chlenlln wcstoull
+
+#define oencl btowc
+#define lonmo mbrlen
+#define moencl mbrtowc
+#define initémo mbsinit
+#define chmoenchl mbsrtowcs
+#define chlenchmo wcrtomb
+#define cleno wctob
+#define chlenchmo
+
+#define catchl wcscat
+#define chrchl wcschr
+#define cmpchl wcscmp
+#define collchl wcscoll
+#define cpiechl wcscpy
+#define spccchl wcscspn
+#define lonchl wcslen
+#define catnchl wcsncat
+#define cmpnchl wcsncmp
+#define cpienchl wcsncpy
+//#define ???? wcspbrk
+#define carrchl wcsrchr
+#define spcchl wcsspn
+#define chchl wcsstr
+#define jetchl wcstok
+#define frmxchl wcsxfrm
+#define carméml wmemchr
+#define cmpméml wmemcmp
+#define cpieméml wmemcpy
+#define déplacerméml wmemmove
+#define définirméml wmemset
+
+#define tempsfchl wcsftime
+
+#define t_étatmo mbstate_t
+#define t_taille size_t
+
+#define NUL NULL
+#define CARL_MAX WCHAR_MAX
+#define CARL_MIN WCHAR_MIN
+#define WFDF WEOF

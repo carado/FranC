@@ -1,0 +1,29 @@
+#include "base.tête"
+#include <wctype.h>
+
+#define estlalnum iswalnum
+#define estlalpha iswalpha
+#define estlvide iswblank
+#define estlcntrl iswcntrl
+#define estlchiffre iswdigit
+#define estlgraph iswgraph
+#define estlminusc iswlower
+#define estlimprime iswprint
+#define estlponct iswpunct
+#define estlespace iswspace
+#define estlmajusc iswupper
+#define esltxchiffre iswxdigit
+
+#define enlminusc towlower
+#define enlmajusc towupper
+
+#define estlctype iswctype
+#define transencl towctrans
+#define transcl wctrans
+#define typecl wctype
+
+#define t_transcl wctrans_t
+#define t_typecl wctype_t
+#define t_entl wint_t
+
+#define WFDF WEOF
