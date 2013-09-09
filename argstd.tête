@@ -5,5 +5,5 @@
 
 #define av_début va_start
 #define av_arg va_arg
-#define av_fin va_fin
+#define av_fin va_end
 #define av_copier va_copy

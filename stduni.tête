@@ -170,3 +170,7 @@
 #define fourchettev vfork
 #define écrire write
 
+#define argopt optarg
+#define indopt optind
+#define erropt opterr
+

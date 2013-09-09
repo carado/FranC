@@ -65,3 +65,9 @@
 #define t_taille size_t
 #define t_posf fpos_t
 
+#define errstd stderr
+#define entstd stdin
+#define sorstd stdout
+
+#define obtenirligne getline
+#define obtenirdélim getdelim
