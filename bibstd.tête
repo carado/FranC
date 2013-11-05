@@ -32,7 +32,7 @@
 #define _Sortir _Exit
 
 #define rechercheb bsearch
-#define qtrier qsort
+#define trir qsort
 
 #define molon mblen
 #define moencl mbtowc
